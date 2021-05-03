@@ -1,0 +1,107 @@
+.page {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.page * {
+  display: flex;
+}
+
+.page p {
+  margin: 0;
+}
+
+.page .sticky {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #b3b3b3;
+  padding: 5px 10px;
+}
+
+.page .boxed {
+  width: 200px;
+  box-shadow: 2px 2px 2px #b3b3b3;
+  border: 1px solid;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: max-content;
+  min-width: 400px;
+}
+
+.page .item {
+  margin: 5px;
+  border-radius: 3px;
+  display: flex;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .item:hover {
+  opacity: 0.6;
+}
+
+.page .item:hover,
+.page .item.active {
+  box-shadow: 2px 2px 2px #005d81;
+  background: #005d81;
+  color: #fff;
+}
+
+.page .section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.page .section:nth-of-type(1) {
+  background: rgb(218, 218, 218);
+}
+
+.page .section:nth-of-type(2) {
+  background: rgb(179, 214, 255);
+}
+
+.page .section:nth-of-type(3) {
+  background: rgb(215, 205, 255);
+}
+
+.page .section .title {
+  padding: 10px;
+  justify-content: flex-end;
+  border-bottom: 1px solid #fff;
+}
+.page .section .title button {
+  margin-left: 1em;
+}
+
+.dashboard {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard p {
+  display: flex;
+}
+
+.debug {
+  display: flex;
+  text-align: left;
+  padding: 20px;
+  justify-content: space-evenly;
+  background: rgb(44, 62, 80);
+  color: #fff;
+}
+
+
+.debug .item {
+  width: 40%;
+}
